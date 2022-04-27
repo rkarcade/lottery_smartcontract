@@ -14,7 +14,7 @@ reset and ready for the next round
 
 Design structure:
 
-1) Set the state variables and constructor 
+1) SET THE STATE VARIABLE AND CONSTRUCTOR 
 
 declaring a dynamic array of type address and the elements of the array will be the player's addresses
 address payable[] public players; The array is public so it could be easily accessed from
@@ -30,14 +30,14 @@ starts the lottery, picks the winner, and resets it for the next round.
 contract's constructor that will be called only once at contract creation and will set the
 manager to the address of the account that deploys the contract.
 
-2) Enter the lottery 
+2) ENTER THE LOTTERY
 
 to enter the lottery, the user will send 0.1 eth to enter the lottery. the user's address will be added to the dynamic array and the sent Eth will be addeded to the contract balance.
 enter a recriver function to be able to receive eth.in Solidity 0.6. 
 The function is run automatically when the contract receives ETH from EOAs.
 
 
-3) validation 
+3) VALIDATION 
 
 everyone should send the same amount which is 0.1 eth. but if user wants more chances, he can send the amount to the lottery contract.
 this would added in the receive functionality
